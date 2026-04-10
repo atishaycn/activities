@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse every kids activity in one modern visual grid with search, filters, quick view, reminders and calendar alignment."
+    />
+    <title>All activities | Activities</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="activities">
+    <header id="site-header"></header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-card">
+          <div class="page-hero-copy">
+            <div>
+              <span class="eyebrow">All activities</span>
+              <h1>Browse the full catalog in one modern, visual activity grid.</h1>
+              <p class="lead">
+                Think of this as the storefront view of the platform: every class, camp, workshop and
+                trending read in one place, with image-led tiles, quick-view details, and filters that
+                help families compare fast.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#activity-market">Start browsing</a>
+                <a class="button button-secondary" href="classes.html">Browse by category</a>
+              </div>
+              <div class="badge-row">
+                <span class="badge"><strong data-total-items>0</strong>&nbsp;total items</span>
+                <span class="badge"><strong data-total-providers>0</strong>&nbsp;providers</span>
+                <span class="badge"><strong data-total-categories>0</strong>&nbsp;categories</span>
+              </div>
+            </div>
+            <div class="catalog-intro">
+              <span class="eyebrow accent">How this page works</span>
+              <ul class="check-list">
+                <li>Search across activity names, providers, tags and categories.</li>
+                <li>Filter by category, area, age-group and month.</li>
+                <li>Use quick view for richer details before shortlisting.</li>
+                <li>Save reminders or add the best fits straight to your calendar.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact" id="activity-market">
+        <div class="catalog-shell">
+          <div class="market-layout">
+            <aside class="market-sidebar">
+              <span class="eyebrow accent">Filter catalog</span>
+              <h3>Find the right fit faster</h3>
+              <p>
+                Parents don’t just browse — they compare. Use these controls to narrow the catalog by
+                what actually matters in a family decision: type, location, age-fit and timing.
+              </p>
+
+              <div class="control-stack">
+                <label>
+                  Search
+                  <input
+                    type="search"
+                    placeholder="Piano, summer camp, badminton..."
+                    data-market-search
+                    data-market-control
+                  />
+                </label>
+
+                <label>
+                  Category
+                  <select data-market-category data-market-control>
+                    <option value="all">All categories</option>
+                  </select>
+                </label>
+
+                <label>
+                  Area
+                  <select data-market-area data-market-control>
+                    <option value="all">All areas</option>
+                  </select>
+                </label>
+
+                <label>
+                  Age-group
+                  <select data-market-age data-market-control>
+                    <option value="all">All age-groups</option>
+                  </select>
+                </label>
+
+                <label>
+                  Month
+                  <select data-market-month data-market-control>
+                    <option value="all">All months</option>
+                  </select>
+                </label>
+
+                <button class="button button-secondary" type="button" data-market-reset>Reset filters</button>
+              </div>
+            </aside>
+
+            <div class="market-shelf">
+              <div class="market-toolbar">
+                <div>
+                  <span class="eyebrow">Visual catalog</span>
+                  <h2><span data-market-count>0</span> activities ready to explore</h2>
+                </div>
+                <label class="market-sort">
+                  Sort by
+                  <select data-market-sort data-market-control>
+                    <option value="soonest">Soonest first</option>
+                    <option value="title">Title A–Z</option>
+                    <option value="price-low">Price low to high</option>
+                    <option value="price-high">Price high to low</option>
+                  </select>
+                </label>
+              </div>
+
+              <div id="activity-market-grid" class="product-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+    <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Activities helps families discover nearby classes, align schedules, and set reminders for kids' activities, camps, and workshops."
+    />
+    <title>Activities | Discover classes, camps & workshops near you</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header id="site-header"></header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <span class="eyebrow">MVP scope · Discovery · Calendar alignment · Reminders</span>
+          <h1>Find the right classes for your child — then plan them with confidence.</h1>
+          <p class="lead">
+            Activities is a parent-first discovery platform for extra-curriculars, sports, academics,
+            camps and workshops. Discover options near you, compare them by age-group and month,
+            save reminders, and add the best-fit sessions to your family calendar.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="activities.html">Browse all activities</a>
+            <a class="button button-secondary" href="classes.html">Browse by category</a>
+            <a class="button button-tertiary" href="partners.html">List a class</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong data-total-classes>0</strong>
+              <span>Curated sample listings across high-intent categories</span>
+            </div>
+            <div class="stat">
+              <strong data-total-categories>0</strong>
+              <span>Discovery rows for classes, camps, workshops and trending reads</span>
+            </div>
+            <div class="stat">
+              <strong>₹1,800</strong>
+              <span>Approx. benchmark activity transaction from the category research</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-head">
+            <div>
+              <span class="eyebrow accent">Your planner</span>
+              <h3>Saved reminders</h3>
+            </div>
+            <a class="button button-sm button-secondary" href="classes.html">Build my shortlist</a>
+          </div>
+          <p>
+            Parents rarely need more options — they need better planning. Save any class from the
+            catalog and turn it into a realistic weekly plan.
+          </p>
+          <div id="home-planner"></div>
+          <div class="inline-note">
+            Tip: every class card supports reminder saving, and class listings also offer an
+            “Add to calendar” download for quick alignment.
+          </div>
+        </aside>
+      </section>
+
+      <section class="section compact">
+        <div class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow accent">Start here</span>
+              <h2>The four paths families see first</h2>
+            </div>
+            <p>
+              The homepage is intentionally simple: parents and partners can immediately understand
+              the platform and move to the page they need.
+            </p>
+          </div>
+
+          <div class="accordion-grid">
+            <details class="dropdown-card" open>
+              <summary>
+                <div>
+                  <strong>About us</strong>
+                  <span>What the platform offers and the founder story</span>
+                </div>
+                <span>Open</span>
+              </summary>
+              <div class="dropdown-body">
+                <p>
+                  Learn about the platform vision, our discovery-first MVP, our founder's point of
+                  view, and how the offering combines discovery, calendar alignment and reminders.
+                </p>
+                <a class="button button-sm button-primary" href="about.html">Read about the platform</a>
+              </div>
+            </details>
+
+            <details class="dropdown-card">
+              <summary>
+                <div>
+                  <strong>Recommended classes near you</strong>
+                  <span>Browse activity categories with filters for area, age-group and month</span>
+                </div>
+                <span>Open</span>
+              </summary>
+              <div class="dropdown-body">
+                <p>
+                  Explore extra-curricular classes, sports, academic classes, extra-academy classes,
+                  summer camps, weekend workshops and Kids Trending articles.
+                </p>
+                <div class="jump-links">
+                  <a href="classes.html#extracurricular">Extra-curricular</a>
+                  <a href="classes.html#sports">Sports</a>
+                  <a href="classes.html#academic">Academic</a>
+                  <a href="classes.html#camps">Camps</a>
+                </div>
+                <div class="inline-actions">
+                  <a class="button button-sm button-primary" href="classes.html">Open discovery page</a>
+                  <a class="button button-sm button-secondary" href="activities.html">Browse all activities</a>
+                </div>
+              </div>
+            </details>
+
+            <details class="dropdown-card">
+              <summary>
+                <div>
+                  <strong>List a class</strong>
+                  <span>Contact details for schools, studios and activity partners</span>
+                </div>
+                <span>Open</span>
+              </summary>
+              <div class="dropdown-body">
+                <p>
+                  If you run a class, camp or workshop, reach the founding team via phone or email to
+                  join the discovery network and get surfaced to active parents.
+                </p>
+                <p><strong>Partner line:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><strong>Partner email:</strong> <a href="mailto:partners@activitieshub.in">partners@activitieshub.in</a></p>
+                <a class="button button-sm button-primary" href="partners.html">Become a partner</a>
+              </div>
+            </details>
+
+            <details class="dropdown-card">
+              <summary>
+                <div>
+                  <strong>Reach us</strong>
+                  <span>Questions, support and launch conversations</span>
+                </div>
+                <span>Open</span>
+              </summary>
+              <div class="dropdown-body">
+                <p>
+                  Use the contact page to ask about bookings, partnerships, launch timelines, privacy
+                  questions or concierge recommendations for your family.
+                </p>
+                <a class="button button-sm button-primary" href="contact.html">Contact the team</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Why this MVP matters</span>
+              <h2>Built around the real parent workflow</h2>
+            </div>
+            <p>
+              Discovery is only useful when it leads to action. The product experience below keeps
+              the MVP focused on the three most important tasks for early users.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">🔎</div>
+              <h3>Discovery</h3>
+              <p>
+                Compare categories such as music, sports, academics, camps and workshops with filters
+                that match how parents actually shortlist options.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🗓️</div>
+              <h3>Calendar alignment</h3>
+              <p>
+                Every class includes a schedule preview and a one-click calendar file so families can
+                avoid clashes and commit with confidence.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">⏰</div>
+              <h3>Smart reminders</h3>
+              <p>
+                Save any class or article as a reminder and build a planning shortlist that carries
+                across the site as parents continue browsing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow accent">Featured classes & activities</span>
+              <h2>Examples from the discovery catalog</h2>
+            </div>
+            <p>
+              These featured listings show how the marketplace can surface nearby options across
+              different parent intents — trial classes, long-term learning and seasonal planning.
+            </p>
+          </div>
+          <div id="home-featured-grid" class="cards-grid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-shell">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Research backdrop</span>
+              <h2>Market signals behind the concept</h2>
+            </div>
+            <p>
+              The strategic direction is informed by activity-subscription businesses like KidPass and
+              the broader competitive landscape around family discovery platforms.
+            </p>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <strong>1M+</strong>
+              <p>Parents reached by leading activity marketplaces in the US at scale.</p>
+            </article>
+            <article class="metric-card">
+              <strong>500K+</strong>
+              <p>Activities booked across music, sports, tutoring, STEM, camps and more.</p>
+            </article>
+            <article class="metric-card">
+              <strong>5,000+</strong>
+              <p>Providers and instructors show that supply is large, but discovery is fragmented.</p>
+            </article>
+            <article class="metric-card">
+              <strong>$10M+</strong>
+              <p>Enrollment value signals strong willingness to pay when trust and convenience align.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-shell">
+          <div class="article-banner">
+            <span class="eyebrow accent">Next step</span>
+            <h2>Browse the full catalog like a modern activity storefront.</h2>
+            <p>
+              Open the new all-activities grid to scan the complete catalog with visual tiles,
+              product-style quick views, and filters that help families compare options faster.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="activities.html">Open all activities grid</a>
+              <a class="button button-secondary" href="classes.html">Browse by category</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+    <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
